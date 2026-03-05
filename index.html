@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extrema — Chaplin Light</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+  <div id="topbar">
+    <span class="logo">Point Extrema — A Letter Drawing Game</span>
+    <div id="step-counter"></div>
+    <div style="width:120px"></div>
+  </div>
+
+  <div id="canvas-wrap">
+    <canvas id="glyph-canvas"></canvas>
+    <div id="coord-readout"></div>
+  </div>
+
+  <div id="bottombar">
+    <span id="letter-label">a</span>
+    <span id="instructions">Click to place extrema points, then press Done.</span>
+    <button id="action-btn" class="action-btn check">Done</button>
+  </div>
+
+  <!-- Score screen -->
+  <div id="score-screen">
+    <div class="sc-title">Round Complete</div>
+    <div class="sc-big" id="sc-big-num">0</div>
+    <div class="sc-sub" id="sc-sub-text">Keep practicing</div>
+    <div class="sc-breakdown" id="sc-breakdown"></div>
+    <button class="sc-restart" id="sc-restart-btn">Play Again</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
